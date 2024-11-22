@@ -1,0 +1,41 @@
+.brand-card {
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.25rem;
+    width: 8rem;
+    height: 8rem;
+    background-color: rgba(24, 143, 207, 0.073);
+    border-radius: 2rem;
+    position: relative;
+  
+    img {
+      padding: .5rem;
+      width: 80%;
+      height: 70%;
+      mix-blend-mode: multiply;
+    }
+  
+    p {
+      width: 80%;
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      font-weight: 900;
+      font-style: normal;
+      font-size: .95rem;
+      color: var(--black);
+    }
+  }
+
+  @media only screen and (min-width: 320px) and (max-width: 480px){
+    .brand-card{
+      width: 6rem;
+      height: 6.5rem;
+      border-radius: 1rem;
+
+      p{
+        font-size: .8rem;
+      }
+    }
+  }

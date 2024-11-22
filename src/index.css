@@ -1,0 +1,15 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --black : #23262c;
+}
+
+body{
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+  background-color: #f4f4f4;
+}
+
+

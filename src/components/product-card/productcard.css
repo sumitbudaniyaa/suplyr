@@ -35,16 +35,16 @@
         font-weight: 900;
         font-style: normal;
         font-size: 1.15rem;
-        color: var(--black);
+        color: grey;
     }
 
         span{
             font-size: .9rem;
             font-family: "Roboto", sans-serif;
-        font-weight: 400;
+        font-weight: 900;
         font-style: normal;
         font-size: 1.25rem;
-        color: grey;
+        color: black;
         }
 
         code{

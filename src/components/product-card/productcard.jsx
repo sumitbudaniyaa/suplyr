@@ -8,13 +8,13 @@ const ProdductCard = ({name,price,moq,margin,img,amount}) =>
 
     <div className="product-desc">
     <p>{name}</p>
-    <span>Price: {price}</span>
+    <span>₹{price}</span>
 
     <code>
         <ul>
             <li>MOQ: {moq}</li>
             <li>Amount: {amount}</li>
-            <li>Margin: Rs {margin}</li>
+            <li>Margin: ₹{margin}</li>
         </ul>
     </code>
     

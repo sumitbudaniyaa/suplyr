@@ -1,6 +1,6 @@
 import './productcard.css'
 
-const ProdductCard = ({name,price,moq,margin,img,amount}) =>
+const ProductCard = ({name,price,moq,margin,img,amount,handleAddToCart }) =>
 {
     return(
 <div className="product-card">
@@ -19,7 +19,7 @@ const ProdductCard = ({name,price,moq,margin,img,amount}) =>
     </code>
     
    
-    <button>Add To Cart</button>
+    <button onClick={() => handleAddToCart({ img, name, price, moq })}>Add To Cart</button>
     </div>
     
 </div>
@@ -27,4 +27,4 @@ const ProdductCard = ({name,price,moq,margin,img,amount}) =>
     )
 }
 
-export default ProdductCard;
+export default ProductCard;

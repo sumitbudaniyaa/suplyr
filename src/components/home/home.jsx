@@ -1,14 +1,14 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import BrandCatCard from '../brand-cat-card/brand-cat-card';
 import './home.css';
 import { IoArrowBackCircle } from "react-icons/io5";
 import { IoArrowForwardCircle } from "react-icons/io5";
 import BrandData from '../../brand-data';
 import CategoryData from '../../category-data';
-import ProdductCard from '../product-card/productcard';
+import ProductCard from '../product-card/productcard';
 import ProductData from '../../product-data';
 
-const Home = () => {
+const Home = ({handleAddToCart}) => {
 
   const ListRef = useRef(null);
 
@@ -19,6 +19,12 @@ const Home = () => {
     }
   };
 
+
+
+
+
+
+ 
   return (
     <>
       <div className="banner">
@@ -74,11 +80,9 @@ const Home = () => {
 
 <div className="product-container">
   {ProductData.map((product) =>(
-    <ProdductCard name={product.name} img={product.img} price={product.price} moq={product.moq} margin={product.margin} amount={product.amount}/>
+    <ProductCard name={product.name} img={product.img} price={product.price} moq={product.moq} margin={product.margin} amount={product.amount} handleAddToCart={handleAddToCart}/>
   ))}
 </div>
-
-
     </>
   );
 };

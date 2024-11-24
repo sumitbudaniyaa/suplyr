@@ -1,7 +1,8 @@
 import "./cartprod.css";
 import { ImBin } from "react-icons/im";
 
-const CartProd = ({ product, removeFromCart,img,price,name,moq }) => {
+const CartProd = ({img,price,name,moq,quantity, handleDeleteItem , handleIncreaseQuantity,
+  handleDecreaseQuantity, }) => {
   return (
    
       <div className="product">
@@ -9,13 +10,13 @@ const CartProd = ({ product, removeFromCart,img,price,name,moq }) => {
         <div className="prod-desc">
           <p>{name}</p>
           <code>(Pack contains {moq} items)</code>
-          <span>₹{price}</span>
+          <span>₹{price * quantity}</span>
          
         </div>
         <div className="amount">
-          <button>-</button>1<button>+</button>
+          <button onClick={() => handleDecreaseQuantity(name)}>-</button>{quantity}<button onClick={() => handleIncreaseQuantity(name)}>+</button>
         </div>
-        <button><ImBin /></button>
+        <button onClick={()=>handleDeleteItem({name})}><ImBin /></button>
       </div>
    
   );

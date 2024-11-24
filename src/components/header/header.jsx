@@ -6,7 +6,7 @@ import { RiShoppingBag3Fill } from "react-icons/ri";
 import { FaUserCircle } from "react-icons/fa";
 import Cart from '../cart/cart';
 
-const Header = ({isCart}) =>{
+const Header = ({isCart, handleDeleteItem, handleIncreaseQuantity, handleDecreaseQuantity}) =>{
 
     const [isLoggedIn,setisLoggedin] = useState(false);
     const [isOpen,setisOpen] = useState(false);
@@ -26,7 +26,7 @@ const Header = ({isCart}) =>{
            <input type="text" placeholder='Search'/>
 </div>
            
-{isCartOpen ? <Cart isCart={isCart} setisCartOpen={setisCartOpen}/>
+{isCartOpen ? <Cart isCart={isCart} setisCartOpen={setisCartOpen} handleDeleteItem={handleDeleteItem} handleIncreaseQuantity={handleIncreaseQuantity} handleDecreaseQuantity={handleDecreaseQuantity}/>
  : ''}
 
            {isLoggedIn ? <div className="afterlogin-btns"> { isOpen ? <div className="acc-tab">

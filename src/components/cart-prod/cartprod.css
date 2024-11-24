@@ -28,7 +28,8 @@
         p {
           font-family: "Roboto", sans-serif;
           font-style: normal;
-          font-weight: 300;
+          font-weight: 400;
+          
         }
 
         span{
@@ -106,7 +107,7 @@
 
             .prod-desc{
                 p{
-                    font-size: .9rem;
+                    font-size: .8rem;
                 }
                 span{
                     font-size: .9rem;
@@ -183,10 +184,13 @@
 
             .prod-desc{
                 p{
-                    font-size: .9rem;
+                    font-size: .8rem;
                 }
                 span{
-                    font-size: .9rem;
+                    font-size: .8rem;
+                }
+                code{
+                    font-size: .7rem;
                 }
             }
 

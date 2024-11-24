@@ -110,6 +110,8 @@ header {
     }
   }
 
+  }
+
   .acc-tab {
     position: absolute;
     display: flex;
@@ -124,7 +126,8 @@ header {
     z-index: 99;
     row-gap: 1rem;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
-    
+
+
     p {
       font-family: "Roboto", sans-serif;
       font-weight: 700;
@@ -178,7 +181,7 @@ header {
       color: rgba(128, 128, 128, 0.626);
     }
   }
-}
+
 
 
 
@@ -205,6 +208,8 @@ header {
   header {
     padding-right: 1rem;
     height: 4rem;
+
+  
 
     img{
         width: 4rem;
@@ -311,6 +316,7 @@ header {
   header {
     padding-right: 1rem;
     height: 4rem;
+
 
     img{
         width: 4rem;
